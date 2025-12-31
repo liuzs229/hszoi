@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("search-input"),e=document.getElementById("search-results");if(!t||!e)return;fetch("/index.json").then(e=>e.json()).then(n=>{t.addEventListener("input",function(){const t=this.value.trim().toLowerCase();if(e.innerHTML="",t.length<2)return;const s=n.filter(e=>{const n=e.title?e.title.toLowerCase():"",s=e.content?e.content.toLowerCase():"";return n.includes(t)||s.includes(t)});if(s.length===0){e.innerHTML="<p>未找到相关结果</p>";return}s.forEach(t=>{const n=document.createElement("article");n.className="search-result-item",n.innerHTML=`
+<h3><a href="${t.permalink}">${t.title}</a></h3>
+<p>${t.content.substring(0,150)}...</p>
+`,e.appendChild(n)})})}).catch(e=>{console.error("Error loading search index:",e)})})
