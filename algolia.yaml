@@ -1,0 +1,17 @@
+default:
+  index:
+    name: hszoi
+    lang: zh
+  fields:
+    - name: title
+      weight: 10
+    - name: content
+      weight: 8
+    - name: tags
+      weight: 9
+    - name: categories
+      weight: 7
+    - date
+    - permalink
+    - readingTime
+    - summary

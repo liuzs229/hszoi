@@ -6,7 +6,8 @@
 
 <link rel='canonical' href='http://localhost:1313/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.b9e9128fec450ebccecc4ec9900157f32b85d0609bcd5ee3293968bcaa1235f2.css"><meta property='og:title' content="404 Page not found">
+<link rel="stylesheet" href="/scss/style.min.b9e9128fec450ebccecc4ec9900157f32b85d0609bcd5ee3293968bcaa1235f2.css"><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<meta property='og:title' content="404 Page not found">
 <meta property='og:description' content="">
 <meta property='og:url' content='http://localhost:1313/404.html'>
 <meta property='og:site_name' content='HSZ OIer Blog'>
@@ -199,7 +200,7 @@
     <div class="not-found-card">
         <h1 class="article-title">404 错误</h1>
         <h2 class="article-subtitle">页面不存在</h2>
-    </div><form action="/search/" class="search-form widget" >
+    </div><form action="/search/" class="search-form widget" data-json="http://localhost:1313/search/index.json">
             <p>
                 <label>搜索</label>
                 <input id="searchInput" name="keyword" required placeholder="输入关键词..." />
@@ -244,6 +245,8 @@
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
+	<script src="/js/search-fuse.js"></script>
+	<link rel="stylesheet" href="/css/custom.css">
 </footer>
 
 

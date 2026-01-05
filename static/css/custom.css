@@ -1,0 +1,48 @@
+/* 搜索结果整体 */
+#search-results {
+  list-style: none;
+  padding: 0;
+}
+
+/* 单条结果 = Stack 卡片 */
+.search-item {
+  background: var(--card-background);
+  border-radius: var(--card-border-radius);
+  padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow-l1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.search-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-l2);
+}
+
+/* 标题 */
+.search-title {
+  display: block;
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.search-title:hover {
+  color: var(--accent-color);
+}
+
+/* 摘要 */
+.search-summary {
+  margin-top: .4rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--secondary-text-color);
+}
+
+/* 高亮 */
+.search-summary mark,
+.search-title mark {
+  background: rgba(255, 200, 0, .35);
+  padding: 0 .15em;
+  border-radius: .2em;
+}

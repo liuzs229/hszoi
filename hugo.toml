@@ -2,6 +2,7 @@ baseURL = 'https://hszoi.pages.dev/'
 languageCode = 'zh-cn'
 title = 'HSZ OIer Blog'
 theme = 'stack'
+cleanDestinationDir = true
 
 # 默认内容语言（可用值: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw）
 DefaultContentLanguage = "zh-cn"
@@ -40,6 +41,7 @@ pagerSize = 5
 rssFullContent = true
 # 网站图标路径（放在 static/ 目录下，如 /favicon.ico）
 favicon = ""
+search = true
 
 [params.sidebar]
 # emoji = "🍥"  # 侧边栏显示的 emoji

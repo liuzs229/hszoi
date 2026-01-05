@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="search-page container mx-auto px-4 py-8">
+  <!-- 搜索输入框 -->
+  <div class="mb-8 max-w-2xl mx-auto">
+    <form id="search-form" class="flex shadow-sm rounded-md overflow-hidden">
+      <input
+        type="text"
+        id="keyword-input"
+        name="keyword"
+        placeholder="搜索文章..."
+        class="flex-1 px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-l-md"
+        value="{{ .Site.Params.keyword }}"
+      />
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-semibold hover:bg-blue-600 rounded-r-md">
+        搜索
+      </button>
+    </form>
+  </div>
+
+  <!-- 搜索结果 -->
+  <ul id="search-results" class="space-y-4 max-w-3xl mx-auto"></ul>
+</section>
+
+{{- partial "footer/footer" . -}}
+{{ end }}
